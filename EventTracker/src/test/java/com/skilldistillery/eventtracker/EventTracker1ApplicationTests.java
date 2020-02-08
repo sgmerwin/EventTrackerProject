@@ -1,10 +1,10 @@
-package com.example.demo;
+package com.skilldistillery.eventtracker;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EventTrackerApplicationTests {
+class EventTracker1ApplicationTests {
 
 	@Test
 	void contextLoads() {
