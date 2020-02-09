@@ -8,7 +8,7 @@ The project involved using REST services with the Spring Framework.
 The REST API provides an @RestController that indicates the data returned by the controller methods will be written into the response body. The REST API provides routes for each operations (@GetMapping, @PostMapping, @PutMapping and @DeleteMapping). 
 An image of the project structure is as follows: 
 
-<img src="https://github.com/sgmerwin/EventTrackerProject/blob/master/project.png" width="500" height="500">
+<img src="https://github.com/sgmerwin/EventTrackerProject/blob/master/project.png" width="300" height="500">
 
 Here is a tables of REST API Endpoints: 
 
