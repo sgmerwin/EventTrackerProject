@@ -32,8 +32,12 @@ public class GasServiceImpl implements GasService {
 	}
 	
 	public Optional<GasTracker> listById(int id){
-		
+		if (repo.findById(id).isPresent()){
 		return repo.findById(id);
+		}
+		else {
+			return null;
+		}
 	}
 	
 	public GasTracker create(GasTracker gasTracker) {
@@ -45,11 +49,10 @@ public class GasServiceImpl implements GasService {
 
 	        if (repo.findById(id).isPresent()){
 	            GasTracker existingGasTracker = repo.findById(id).get();
-
 	            existingGasTracker.setGallons(gasTracker.getGallons());
-	       
+	            existingGasTracker.setTotalMilage(gasTracker.getTotalMilage());
+	            existingGasTracker.setTotalMilage(gasTracker.getTotal_fuel_cost());
 	            repo.save(existingGasTracker);
-	            
 	            return repo.findById(id);
 	        }else{
 	            return null;

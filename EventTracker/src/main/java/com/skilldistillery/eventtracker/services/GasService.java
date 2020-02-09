@@ -18,7 +18,7 @@ public interface GasService {
 	
 	public GasTracker create(GasTracker gasTracker);
 	
-	public Optional<GasTracker>  update(int id, GasTracker gasTracker);
+	public Optional<GasTracker> update(int id, GasTracker gasTracker);
 	
 	public Boolean delete(int id);
 }
