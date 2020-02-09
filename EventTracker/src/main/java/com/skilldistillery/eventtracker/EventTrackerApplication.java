@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EventTracker1Application {
+public class EventTrackerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EventTracker1Application.class, args);
+		SpringApplication.run(EventTrackerApplication.class, args);
 	}
 
 }
